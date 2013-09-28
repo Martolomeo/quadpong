@@ -94,18 +94,18 @@ class Pala_v(pygame.sprite.Sprite):
     def moverv(self, n, keys):
         if self.rect.top >= 0:
             if keys[K_UP]:
-                self.rect.centery -= self.speed * n
+                self.rect.top -= self.speed * n
         if self.rect.bottom <= HEIGHT:
             if keys[K_DOWN]:
-                self.rect.centery += self.speed * n
+                self.rect.bottom += self.speed * n
                 
     def moverv1(self, n, keys):
         if self.rect.top >= 0:
             if keys[K_w]:
-                self.rect.centery -= self.speed * n
+                self.rect.top -= self.speed * n
         if self.rect.bottom <= HEIGHT:
             if keys[K_s]:
-                self.rect.centery += self.speed * n
+                self.rect.bottom += self.speed * n
 
     def ia(self, n, bola):
         if bola.rect.centery < self.rect.centery:
